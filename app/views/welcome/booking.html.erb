@@ -1,0 +1,13 @@
+<%= form_for @booking, url: result_path do |f| %>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.select(:city_id, City.all.collect {|city| [ city.name, city.id ] }) %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.datetime_select :date %>
+  </div>
+  <div class="actions">
+    <%= f.button :submit, name: 'customer_id', value: @customer.id %>
+  </div>
+<% end %>
