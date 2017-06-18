@@ -1,23 +1,8 @@
 Rails.application.routes.draw do
-  resources :cities
-  root 'welcome#index'
-
-  resources :bookings
-  resources :cleaners
-  resources :customers
-  
-  scope "/welcome" do
-    match "/registration" => "welcome#registration", via: [:get, :post]
-    match "/sign_in" => "welcome#sign_in", via: [:post]
-    match "/customer_booking" => "welcome#booking", via: [:get, :post]
-    match "/result" => "welcome#result", via: [:get, :post]
-  end
-  
   # The priority is upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

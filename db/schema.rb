@@ -11,50 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170616104933) do
-
-  create_table "bookings", force: :cascade do |t|
-    t.integer  "customer_id"
-    t.integer  "cleaner_id"
-    t.date     "date"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.integer  "city_id"
-  end
-
-  add_index "bookings", ["city_id"], name: "index_bookings_on_city_id"
-  add_index "bookings", ["cleaner_id"], name: "index_bookings_on_cleaner_id"
-  add_index "bookings", ["customer_id"], name: "index_bookings_on_customer_id"
+ActiveRecord::Schema.define(version: 20170618153841) do
 
   create_table "cities", force: :cascade do |t|
-    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
-
-  create_table "city_cleaners", force: :cascade do |t|
-    t.integer "city_id"
-    t.integer "cleaner_id"
-  end
-
-  add_index "city_cleaners", ["city_id", "cleaner_id"], name: "index_city_cleaners_on_city_id_and_cleaner_id"
-  add_index "city_cleaners", ["cleaner_id", "city_id"], name: "index_city_cleaners_on_cleaner_id_and_city_id"
-
-  create_table "cleaners", force: :cascade do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.decimal  "quality_score"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-  end
-
-  create_table "customers", force: :cascade do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "phone_number"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-    t.integer  "city_id"
-  end
-
-  add_index "customers", ["city_id"], name: "index_customers_on_city_id"
 
 end
