@@ -1,35 +1,2439 @@
 
 
-Started GET "/" for 127.0.0.1 at 2017-06-18 18:31:14 +0300
+Started GET "/" for 127.0.0.1 at 2017-06-20 13:50:36 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.3) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.3) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/paulleoniuk/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/paulleoniuk/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/paulleoniuk/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (45.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-20 13:50:36 +0300
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.3) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.3) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/paulleoniuk/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/paulleoniuk/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/paulleoniuk/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (44.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCities (20170620094146)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "cities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+SQLite3::SQLException: table "cities" already exists: CREATE TABLE "cities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCities (20170620094146)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "cities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+SQLite3::SQLException: table "cities" already exists: CREATE TABLE "cities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[35m (0.1ms)[0m  rollback transaction
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-20 13:51:22 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.3) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.3) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/paulleoniuk/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/paulleoniuk/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/paulleoniuk/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.0ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (46.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCities (20170620094146)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "cities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+SQLite3::SQLException: table "cities" already exists: CREATE TABLE "cities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (7.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateSuppliers (20170620093818)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "suppliers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "product_name" varchar, "phone" varchar, "compony" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170620093818"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateCustomers (20170620093842)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "phone" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170620093842"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateOrders (20170620094128)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date_of_purchase" date, "time_of_purchase" time, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170620094128"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateCities (20170620094146)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "cities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170620094146"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateJoinTableOrdersSuppliers (20170620101512)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "orders_suppliers" ("order_id" integer NOT NULL, "supplier_id" integer NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170620101512"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateJoinTableOrdersCustomers (20170620101538)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "customers_orders" ("order_id" integer NOT NULL, "customer_id" integer NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170620101538"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to CreateJoinTableSuppliersCity (20170620101627)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "cities_suppliers" ("supplier_id" integer NOT NULL, "city_id" integer NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170620101627"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Migrating to CreateJoinTableCustomersCity (20170620101643)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "cities_customers" ("customer_id" integer NOT NULL, "city_id" integer NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170620101643"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateJoinTableOrderCity (20170620101701)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "cities_orders" ("order_id" integer NOT NULL, "city_id" integer NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170620101701"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-20 13:52:13 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by Rails::WelcomeController#index as HTML
-  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
-Completed 200 OK in 18ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 20ms (Views: 8.2ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/" for 127.0.0.1 at 2017-06-18 18:33:38 +0300
+Started GET "/" for 127.0.0.1 at 2017-06-20 13:52:18 +0300
 Processing by Rails::WelcomeController#index as HTML
   Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
-Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/" for 127.0.0.1 at 2017-06-18 18:33:44 +0300
-Processing by Rails::WelcomeController#index as HTML
-  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
-Completed 200 OK in 17ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+Started GET "/customrs" for 127.0.0.1 at 2017-06-20 13:52:24 +0300
+
+ActionController::RoutingError (No route matches [GET] "/customrs"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/paulleoniuk/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/paulleoniuk/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/paulleoniuk/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
-Started GET "/" for 127.0.0.1 at 2017-06-18 18:33:45 +0300
-Processing by Rails::WelcomeController#index as HTML
-  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
-Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
-  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
-  [1m[35m (0.1ms)[0m  select sqlite_version(*)
-  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.0ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.2ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (41.5ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 13:52:28 +0300
+Processing by CustomersController#index as HTML
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT "customers".* FROM "customers"
+  Rendered customers/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 1564ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `root_path' for #<#<Class:0x0000000197b4a8>:0x0000000195b3b0>
+Did you mean?  font_path):
+     8: </head>
+     9: <body>
+    10: 
+    11: <%= link_to 'Home', root_path %>
+    12: <%= link_to 'Customers', customers_path %>
+    13: <%= link_to 'Suppliers', suppliers_path %>
+    14: <%= link_to 'Purchases', orders_path %>
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__4389045589888015852_13234700'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.2ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 13:52:51 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.4ms)[0m  [1mSELECT "customers".* FROM "customers"[0m
+  Rendered customers/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 38ms (Views: 32.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bookings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-20 13:52:51 +0300
+
+
+Started GET "/assets/cities.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-20 13:52:51 +0300
+
+
+Started GET "/assets/customers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-20 13:52:51 +0300
+
+
+Started GET "/assets/cleaners.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-20 13:52:51 +0300
+
+
+Started GET "/assets/scaffolds.self-aef596adbcd0deea0280fb0e3d262a69d2ea4bcd04c5cd65e03ac81dce4497c6.css?body=1" for 127.0.0.1 at 2017-06-20 13:52:51 +0300
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-20 13:52:51 +0300
+
+
+Started GET "/assets/suppliers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-20 13:52:51 +0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-06-20 13:52:51 +0300
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2017-06-20 13:52:51 +0300
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2017-06-20 13:52:51 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2017-06-20 13:52:51 +0300
+
+
+Started GET "/assets/customers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-20 13:52:51 +0300
+
+
+Started GET "/assets/cities.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-20 13:52:51 +0300
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-20 13:52:51 +0300
+
+
+Started GET "/assets/suppliers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-20 13:52:51 +0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-06-20 13:52:51 +0300
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 13:52:52 +0300
+Processing by CustomersController#index as HTML
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT "customers".* FROM "customers"
+  Rendered customers/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2017-06-20 13:52:53 +0300
+Processing by SuppliersController#index as HTML
+  [1m[36mSupplier Load (0.2ms)[0m  [1mSELECT "suppliers".* FROM "suppliers"[0m
+  Rendered suppliers/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 35ms (Views: 30.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-20 13:52:54 +0300
+Processing by OrdersController#index as HTML
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `validates_date' for #<Class:0x007f9a25e61768>
+Did you mean?  validates
+               validates_each
+               validates_with):
+  app/models/order.rb:2:in `<class:Order>'
+  app/models/order.rb:1:in `<top (required)>'
+  app/controllers/orders_controller.rb:7:in `index'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (23.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (49.1ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-20 13:52:54 +0300
+Processing by OrdersController#index as HTML
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `validates_date' for #<Class:0x00000002312200>
+Did you mean?  validates
+               validates_each
+               validates_with):
+  app/models/order.rb:2:in `<class:Order>'
+  app/models/order.rb:1:in `<top (required)>'
+  app/controllers/orders_controller.rb:7:in `index'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.2ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (5.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (30.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (57.1ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-20 13:52:57 +0300
+Processing by OrdersController#index as HTML
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `validates_date' for #<Class:0x007f9a27577330>
+Did you mean?  validates
+               validates_each
+               validates_with):
+  app/models/order.rb:2:in `<class:Order>'
+  app/models/order.rb:1:in `<top (required)>'
+  app/controllers/orders_controller.rb:7:in `index'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.1ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-20 13:52:58 +0300
+Processing by OrdersController#index as HTML
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `validates_date' for #<Class:0x000000038cfcc8>
+Did you mean?  validates
+               validates_each
+               validates_with):
+  app/models/order.rb:2:in `<class:Order>'
+  app/models/order.rb:1:in `<top (required)>'
+  app/controllers/orders_controller.rb:7:in `index'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.3ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 13:53:13 +0300
+Processing by CustomersController#index as HTML
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT "customers".* FROM "customers"
+  Rendered customers/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-20 13:53:14 +0300
+Processing by OrdersController#index as HTML
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `validates_date' for #<Class:0x007f9a24f1dec8>
+Did you mean?  validates
+               validates_each
+               validates_with):
+  app/models/order.rb:2:in `<class:Order>'
+  app/models/order.rb:1:in `<top (required)>'
+  app/controllers/orders_controller.rb:7:in `index'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (18.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (39.4ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-20 13:53:14 +0300
+Processing by OrdersController#index as HTML
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `validates_date' for #<Class:0x007f9a275f50a0>
+Did you mean?  validates
+               validates_each
+               validates_with):
+  app/models/order.rb:2:in `<class:Order>'
+  app/models/order.rb:1:in `<top (required)>'
+  app/controllers/orders_controller.rb:7:in `index'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.0ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (23.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (44.7ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2017-06-20 13:53:16 +0300
+Processing by CitiesController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `assert_valid_keys' for :orders:Symbol):
+  app/models/city.rb:4:in `<class:City>'
+  app/models/city.rb:1:in `<top (required)>'
+  app/controllers/cities_controller.rb:7:in `index'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.6ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2017-06-20 13:53:16 +0300
+Processing by CitiesController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `assert_valid_keys' for :orders:Symbol):
+  app/models/city.rb:4:in `<class:City>'
+  app/models/city.rb:1:in `<top (required)>'
+  app/controllers/cities_controller.rb:7:in `index'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (46.1ms)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2017-06-20 13:53:21 +0300
+Processing by SuppliersController#index as HTML
+  [1m[36mSupplier Load (0.2ms)[0m  [1mSELECT "suppliers".* FROM "suppliers"[0m
+  Rendered suppliers/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/suppliers/new" for 127.0.0.1 at 2017-06-20 13:53:23 +0300
+Processing by SuppliersController#new as HTML
+  Rendered suppliers/_form.html.erb (527.7ms)
+  Rendered suppliers/new.html.erb within layouts/application (529.7ms)
+Completed 200 OK in 564ms (Views: 557.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 13:53:29 +0300
+Processing by CustomersController#index as HTML
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT "customers".* FROM "customers"
+  Rendered customers/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/customers/new" for 127.0.0.1 at 2017-06-20 13:53:30 +0300
+Processing by CustomersController#new as HTML
+  Rendered customers/_form.html.erb (3.3ms)
+  Rendered customers/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2017-06-20 13:53:37 +0300
+Processing by SuppliersController#index as HTML
+  [1m[36mSupplier Load (0.2ms)[0m  [1mSELECT "suppliers".* FROM "suppliers"[0m
+  Rendered suppliers/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/suppliers/new" for 127.0.0.1 at 2017-06-20 13:53:39 +0300
+Processing by SuppliersController#new as HTML
+  Rendered suppliers/_form.html.erb (2.8ms)
+  Rendered suppliers/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 28ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-20 13:53:40 +0300
+Processing by OrdersController#index as HTML
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `validates_date' for #<Class:0x007f9a221513a0>
+Did you mean?  validates
+               validates_each
+               validates_with):
+  app/models/order.rb:2:in `<class:Order>'
+  app/models/order.rb:1:in `<top (required)>'
+  app/controllers/orders_controller.rb:7:in `index'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (47.3ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-20 13:53:41 +0300
+Processing by OrdersController#index as HTML
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `validates_date' for #<Class:0x007f9a22771a78>
+Did you mean?  validates
+               validates_each
+               validates_with):
+  app/models/order.rb:2:in `<class:Order>'
+  app/models/order.rb:1:in `<top (required)>'
+  app/controllers/orders_controller.rb:7:in `index'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (41.8ms)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2017-06-20 13:53:42 +0300
+Processing by SuppliersController#index as HTML
+  [1m[35mSupplier Load (0.2ms)[0m  SELECT "suppliers".* FROM "suppliers"
+  Rendered suppliers/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 13:53:43 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT "customers".* FROM "customers"[0m
+  Rendered customers/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2017-06-20 13:53:44 +0300
+Processing by SuppliersController#index as HTML
+  [1m[35mSupplier Load (0.2ms)[0m  SELECT "suppliers".* FROM "suppliers"
+  Rendered suppliers/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
-Migrating to CreateCities (20170618153841)
+Migrating to CreateJoinTableOrderCity (20170620101701)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
-  [1m[35m (0.4ms)[0m  CREATE TABLE "cities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
-  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170618153841"]]
+  [1m[35m (0.4ms)[0m  DROP TABLE "cities_orders"
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20170620101701"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Migrating to CreateJoinTableCustomersCity (20170620101643)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "cities_customers"
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20170620101643"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateJoinTableSuppliersCity (20170620101627)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "cities_suppliers"
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20170620101627"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateJoinTableOrdersCustomers (20170620101538)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "customers_orders"
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20170620101538"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateJoinTableOrdersSuppliers (20170620101512)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "orders_suppliers"
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20170620101512"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateCities (20170620094146)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "cities"
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20170620094146"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateOrders (20170620094128)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "orders"
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20170620094128"]]
+  [1m[35m (7.1ms)[0m  commit transaction
+Migrating to CreateCustomers (20170620093842)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "customers"
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20170620093842"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateSuppliers (20170620093818)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "suppliers"
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20170620093818"]]
   [1m[35m (0.9ms)[0m  commit transaction
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSuppliers (20170620093818)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "suppliers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "product_name" varchar, "phone" varchar, "compony" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170620093818"]]
+  [1m[36m (4.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCustomers (20170620093842)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCustomers (20170620093842)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "phone" varchar, "city_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_customers_on_city_id" ON "customers" ("city_id")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170620093842"]]
+  [1m[36m (12.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateOrders (20170620094128)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "supplier_id" integer, "customer_id" integer, "city_id" integer, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_orders_on_supplier_id" ON "orders" ("supplier_id")
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_supplier_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_supplier_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_orders_on_customer_id" ON "orders" ("customer_id")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_customer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_customer_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_supplier_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_supplier_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_orders_on_city_id" ON "orders" ("city_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170620094128"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCities (20170620094146)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "cities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170620094146"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_customers_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_customers_on_city_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_city_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_customer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_customer_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_supplier_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_supplier_id' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-20 14:10:57 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CustomersController#index as HTML
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT "customers".* FROM "customers"
+  Rendered customers/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 291ms (Views: 271.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 14:11:00 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT "customers".* FROM "customers"[0m
+  Rendered customers/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2017-06-20 14:11:00 +0300
+Processing by SuppliersController#index as HTML
+  [1m[35mSupplier Load (0.2ms)[0m  SELECT "suppliers".* FROM "suppliers"
+  Rendered suppliers/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 60ms (Views: 46.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-20 14:11:01 +0300
+Processing by OrdersController#index as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `assert_valid_keys' for :city:Symbol):
+  app/models/order.rb:7:in `<class:Order>'
+  app/models/order.rb:1:in `<top (required)>'
+  app/controllers/orders_controller.rb:7:in `index'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.8ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-20 14:11:02 +0300
+Processing by OrdersController#index as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `assert_valid_keys' for :city:Symbol):
+  app/models/order.rb:7:in `<class:Order>'
+  app/models/order.rb:1:in `<top (required)>'
+  app/controllers/orders_controller.rb:7:in `index'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (45.1ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-20 14:11:17 +0300
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.6ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 41ms (Views: 36.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2017-06-20 14:11:19 +0300
+Processing by SuppliersController#index as HTML
+  [1m[35mSupplier Load (0.3ms)[0m  SELECT "suppliers".* FROM "suppliers"
+  Rendered suppliers/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 26.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-20 14:11:20 +0300
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2017-06-20 14:11:20 +0300
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2017-06-20 14:11:21 +0300
+Processing by SuppliersController#index as HTML
+  [1m[36mSupplier Load (0.2ms)[0m  [1mSELECT "suppliers".* FROM "suppliers"[0m
+  Rendered suppliers/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 14:11:21 +0300
+Processing by CustomersController#index as HTML
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT "customers".* FROM "customers"
+  Rendered customers/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 28ms (Views: 24.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2017-06-20 14:11:22 +0300
+Processing by CitiesController#index as HTML
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2017-06-20 14:11:23 +0300
+Processing by CitiesController#new as HTML
+  Rendered cities/_form.html.erb (474.2ms)
+  Rendered cities/new.html.erb within layouts/application (475.8ms)
+Completed 200 OK in 504ms (Views: 499.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2017-06-20 14:11:28 +0300
+Processing by CitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gUPzTjjBFDepa5ijfEYw8p+mX7JrWeehynUXUBYTix9QEqp7+lFb04folEAO+V5bq1HGST31l8vlFb25k3XduA==", "city"=>{"name"=>"Kyiv"}, "commit"=>"Create City"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cities" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Kyiv"], ["created_at", "2017-06-20 11:11:28.794691"], ["updated_at", "2017-06-20 11:11:28.794691"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/cities/1
+Completed 302 Found in 9ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2017-06-20 14:11:28 +0300
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cities/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 35ms (Views: 27.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2017-06-20 14:11:30 +0300
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2017-06-20 14:11:31 +0300
+Processing by CitiesController#new as HTML
+  Rendered cities/_form.html.erb (1.4ms)
+  Rendered cities/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2017-06-20 14:11:35 +0300
+Processing by CitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o6iVEPn03v9LaKWK9BIE9GquICHAyVrizpLN1twEB2Zy+cwlO2SRG2XrqWmGrWpdXlm52pZlKojh8mc/WWJRwQ==", "city"=>{"name"=>"Berlin"}, "commit"=>"Create City"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "cities" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Berlin"], ["created_at", "2017-06-20 11:11:35.899273"], ["updated_at", "2017-06-20 11:11:35.899273"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/cities/2
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2017-06-20 14:11:35 +0300
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCity Load (0.1ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered cities/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2017-06-20 14:11:37 +0300
+Processing by CitiesController#index as HTML
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2017-06-20 14:11:39 +0300
+Processing by SuppliersController#index as HTML
+  [1m[35mSupplier Load (0.2ms)[0m  SELECT "suppliers".* FROM "suppliers"
+  Rendered suppliers/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 14:11:39 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT "customers".* FROM "customers"[0m
+  Rendered customers/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2017-06-20 14:11:40 +0300
+Processing by SuppliersController#index as HTML
+  [1m[35mSupplier Load (0.2ms)[0m  SELECT "suppliers".* FROM "suppliers"
+  Rendered suppliers/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 14:11:40 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT "customers".* FROM "customers"[0m
+  Rendered customers/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/new" for 127.0.0.1 at 2017-06-20 14:11:42 +0300
+Processing by CustomersController#new as HTML
+  Rendered customers/_form.html.erb (3.4ms)
+  Rendered customers/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 33ms (Views: 27.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/customers" for 127.0.0.1 at 2017-06-20 14:11:46 +0300
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2ck6cxJ4snJqRxG/qodYqmeY7A+GOIthdSmQXgU9mXAImGNG0Oj9lkTEHVzYODYDU2919NCU+wtaSTq3gFvP1w==", "customer"=>{"first_name"=>"Paul", "last_name"=>"Leoniuk", "phone"=>"1231231241"}, "commit"=>"Create Customer"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mCustomer Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "customers" WHERE "customers"."phone" = '1231231241' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered customers/_form.html.erb (6.0ms)
+  Rendered customers/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 54ms (Views: 36.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/customers" for 127.0.0.1 at 2017-06-20 14:12:00 +0300
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gPah+sH+fbTBHA/agKnMCIcjt/8CmmRhYM+iXDa/1vZRp/jPA24yUO+fAznyFqKhs9QuBFQ2FAtPrwi1s9mAUQ==", "customer"=>{"first_name"=>"Paul", "last_name"=>"Leoniuk", "phone"=>"0664537957"}, "commit"=>"Create Customer"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCustomer Exists (0.2ms)[0m  SELECT  1 AS one FROM "customers" WHERE "customers"."phone" = '0664537957' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered customers/_form.html.erb (5.5ms)
+  Rendered customers/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 39ms (Views: 34.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/customers" for 127.0.0.1 at 2017-06-20 14:12:29 +0300
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gPah+sH+fbTBHA/agKnMCIcjt/8CmmRhYM+iXDa/1vZRp/jPA24yUO+fAznyFqKhs9QuBFQ2FAtPrwi1s9mAUQ==", "customer"=>{"first_name"=>"Paul", "last_name"=>"Leoniuk", "phone"=>"0664537957"}, "commit"=>"Create Customer"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCustomer Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "customers" WHERE "customers"."phone" = '0664537957' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered customers/_form.html.erb (11.0ms)
+  Rendered customers/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 42ms (Views: 37.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/customers" for 127.0.0.1 at 2017-06-20 14:12:31 +0300
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CTZUr2RrY72EjFOS/VCSIz8uecXQWGx/2kDevL3EZBrYZw2apvssWaoPX3GP7/yKC9ngPob0HBX1IHRVOKIyvQ==", "customer"=>{"first_name"=>"Paul", "last_name"=>"Leoniuk", "phone"=>"0664537957", "city_id"=>"1"}, "commit"=>"Create Customer"}
+Unpermitted parameter: city_id
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCustomer Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "customers" WHERE "customers"."phone" = '0664537957' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered customers/_form.html.erb (5.4ms)
+  Rendered customers/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 39ms (Views: 34.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/customers" for 127.0.0.1 at 2017-06-20 14:12:36 +0300
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xepzxFSFmWtznnmcg5WYcRHm5kKBqFbAIi/5jDscQVkUuyrxlhXWj10ddX/xKvbYJRF/udcEJqoNT1NlvnoX/g==", "customer"=>{"first_name"=>"Paul", "last_name"=>"Leoniuk", "phone"=>"0664537957", "city_id"=>"2"}, "commit"=>"Create Customer"}
+Unpermitted parameter: city_id
+  [1m[35m (0.7ms)[0m  begin transaction
+  [1m[36mCustomer Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "customers" WHERE "customers"."phone" = '0664537957' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered customers/_form.html.erb (5.1ms)
+  Rendered customers/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 64ms (Views: 39.1ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/customers" for 127.0.0.1 at 2017-06-20 14:12:41 +0300
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"woAoIuCvyeoZ5oGFe6Cr7tKm8jnw1Ep9i8HgWBVHJNkT0XEXIj+GDjdljWYJH8VH5lFrwqZ4OhekoUqxkCFyfg==", "customer"=>{"first_name"=>"Paul", "last_name"=>"Leoniuk", "phone"=>"0664537957", "city_id"=>"1"}, "commit"=>"Create Customer"}
+Unpermitted parameter: city_id
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mCustomer Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "customers" WHERE "customers"."phone" = '0664537957' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered customers/_form.html.erb (6.1ms)
+  Rendered customers/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 55ms (Views: 47.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/customers" for 127.0.0.1 at 2017-06-20 14:12:42 +0300
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/QrpgymVPRNKbUYld1KZuEMahOcjeRDHiF7acYQkv2gsW7C26wVy92TuSsYF7fcRd+0dHHXVYK2nPnCYAULpzw==", "customer"=>{"first_name"=>"Paul", "last_name"=>"Leoniuk", "phone"=>"0664537957", "city_id"=>"1"}, "commit"=>"Create Customer"}
+Unpermitted parameter: city_id
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mCustomer Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "customers" WHERE "customers"."phone" = '0664537957' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered customers/_form.html.erb (7.6ms)
+  Rendered customers/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 57ms (Views: 48.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/customers" for 127.0.0.1 at 2017-06-20 14:12:43 +0300
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"olfa/Nydwfi3/ovrdW/S4uMKuxHLUWfloEOWSYd5gcxzBoPJHg2OHJl9hwgH0LxL1/0i6p39F4+PIzygAh/Xaw==", "customer"=>{"first_name"=>"Paul", "last_name"=>"Leoniuk", "phone"=>"0664537957", "city_id"=>"1"}, "commit"=>"Create Customer"}
+Unpermitted parameter: city_id
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mCustomer Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "customers" WHERE "customers"."phone" = '0664537957' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered customers/_form.html.erb (5.6ms)
+  Rendered customers/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 44ms (Views: 38.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 14:12:56 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CustomersController#index as HTML
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT "customers".* FROM "customers"
+  Rendered customers/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 269ms (Views: 247.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 14:12:57 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT "customers".* FROM "customers"[0m
+  Rendered customers/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/customers/new" for 127.0.0.1 at 2017-06-20 14:12:58 +0300
+Processing by CustomersController#new as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered customers/_form.html.erb (522.6ms)
+  Rendered customers/new.html.erb within layouts/application (531.4ms)
+Completed 200 OK in 576ms (Views: 557.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/customers" for 127.0.0.1 at 2017-06-20 14:13:04 +0300
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C0n8d3YHiyPszeCl1EUw89ZL78UFBn3GQ8OvXMCnhsXaGKVCtJfEx8JO7Eam+l5a4rx2PlOqDaxsowW1RcHQYg==", "customer"=>{"first_name"=>"Paul", "last_name"=>"Leoniuk", "phone"=>"0664537957", "city_id"=>"1"}, "commit"=>"Create Customer"}
+Unpermitted parameter: city_id
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCustomer Exists (0.3ms)[0m  SELECT  1 AS one FROM "customers" WHERE "customers"."phone" = '0664537957' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mCity Load (0.3ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered customers/_form.html.erb (5.0ms)
+  Rendered customers/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 57ms (Views: 40.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/customers" for 127.0.0.1 at 2017-06-20 14:13:54 +0300
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rGQqxCQDZeuxb+dmIWHJVwEzlrPR/TkLxBJU8d8YUHV9NXPx5pMqD5/s64VT3qf+NcQPSIdRSWHrcv4YWn4G0g==", "customer"=>{"first_name"=>"Paul", "last_name"=>"Leoniuk", "phone"=>"0664537957", "city_id"=>"1"}, "commit"=>"Create Customer"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCustomer Exists (0.2ms)[0m  SELECT  1 AS one FROM "customers" WHERE "customers"."phone" = '0664537957' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "customers" ("first_name", "last_name", "phone", "city_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Paul"], ["last_name", "Leoniuk"], ["phone", "0664537957"], ["city_id", 1], ["created_at", "2017-06-20 11:13:54.787353"], ["updated_at", "2017-06-20 11:13:54.787353"]]
+  [1m[35m (6.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/customers/1
+Completed 302 Found in 25ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/customers/1" for 127.0.0.1 at 2017-06-20 14:13:54 +0300
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered customers/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 30.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 14:13:57 +0300
+Processing by CustomersController#index as HTML
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT "customers".* FROM "customers"
+  Rendered customers/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 14:15:09 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT "customers".* FROM "customers"[0m
+  Rendered customers/index.html.erb within layouts/application (45.2ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `order' for #<#<Class:0x007f612b57dc60>:0x007f612b841118>
+Did you mean?  order_url):
+    19:         <td><%= customer.first_name %></td>
+    20:         <td><%= customer.last_name %></td>
+    21:         <td><%= customer.phone %></td>
+    22:         <td><%= order.city %></td>
+    23:         <td><%= link_to 'Show', customer %></td>
+    24:         <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
+    25:         <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  app/views/customers/index.html.erb:22:in `block in _app_views_customers_index_html_erb__40529400443772245_70027637292620'
+  app/views/customers/index.html.erb:17:in `_app_views_customers_index_html_erb__40529400443772245_70027637292620'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (41.7ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 14:15:29 +0300
+Processing by CustomersController#index as HTML
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT "customers".* FROM "customers"
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered customers/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 47ms (Views: 45.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 14:15:48 +0300
+Processing by CustomersController#index as HTML
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT "customers".* FROM "customers"
+  [1m[36mCity Load (0.1ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered customers/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2017-06-20 14:15:50 +0300
+Processing by SuppliersController#index as HTML
+  [1m[35mSupplier Load (0.2ms)[0m  SELECT "suppliers".* FROM "suppliers"
+  Rendered suppliers/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 30ms (Views: 25.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/suppliers/new" for 127.0.0.1 at 2017-06-20 14:15:51 +0300
+Processing by SuppliersController#new as HTML
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered suppliers/_form.html.erb (7.7ms)
+  Rendered suppliers/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 38ms (Views: 32.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/suppliers" for 127.0.0.1 at 2017-06-20 14:16:09 +0300
+Processing by SuppliersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xqKcoQ0bV04qS+Sid6ZAbRWhtE/id4WY6dcESyVqKYEX88WUz4sYqgTI6EEFGS7EIVYttLTb9fLGt66ioAx/Jg==", "supplier"=>{"first_name"=>"Paul", "last_name"=>"Leoniuk", "product_name"=>"Iphone", "phone"=>"0664537958", "compony"=>"Syndicode", "city"=>"2"}, "commit"=>"Create Supplier"}
+Unpermitted parameter: city
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSupplier Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "suppliers" WHERE "suppliers"."phone" = '0664537958' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `city_id' for #<Supplier:0x007f6118f44c20>
+Did you mean?  city):
+  app/controllers/suppliers_controller.rb:30:in `block in create'
+  app/controllers/suppliers_controller.rb:29:in `create'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (26.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (53.5ms)
+
+
+Started POST "/suppliers" for 127.0.0.1 at 2017-06-20 14:16:29 +0300
+Processing by SuppliersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xqKcoQ0bV04qS+Sid6ZAbRWhtE/id4WY6dcESyVqKYEX88WUz4sYqgTI6EEFGS7EIVYttLTb9fLGt66ioAx/Jg==", "supplier"=>{"first_name"=>"Paul", "last_name"=>"Leoniuk", "product_name"=>"Iphone", "phone"=>"0664537958", "compony"=>"Syndicode", "city"=>"2"}, "commit"=>"Create Supplier"}
+Unpermitted parameter: city
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSupplier Exists (0.2ms)[0m  SELECT  1 AS one FROM "suppliers" WHERE "suppliers"."phone" = '0664537958' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `city_id' for #<Supplier:0x007f612a8e2a78>
+Did you mean?  city):
+  app/controllers/suppliers_controller.rb:30:in `block in create'
+  app/controllers/suppliers_controller.rb:29:in `create'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (44.7ms)
+
+
+Started POST "/suppliers" for 127.0.0.1 at 2017-06-20 14:16:58 +0300
+Processing by SuppliersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xqKcoQ0bV04qS+Sid6ZAbRWhtE/id4WY6dcESyVqKYEX88WUz4sYqgTI6EEFGS7EIVYttLTb9fLGt66ioAx/Jg==", "supplier"=>{"first_name"=>"Paul", "last_name"=>"Leoniuk", "product_name"=>"Iphone", "phone"=>"0664537958", "compony"=>"Syndicode", "city"=>"2"}, "commit"=>"Create Supplier"}
+Unpermitted parameter: city
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSupplier Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "suppliers" WHERE "suppliers"."phone" = '0664537958' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `city_id' for #<Supplier:0x007f612b42b380>
+Did you mean?  city):
+  app/controllers/suppliers_controller.rb:30:in `block in create'
+  app/controllers/suppliers_controller.rb:29:in `create'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.5ms)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2017-06-20 14:17:03 +0300
+Processing by SuppliersController#index as HTML
+  [1m[36mSupplier Load (0.2ms)[0m  [1mSELECT "suppliers".* FROM "suppliers"[0m
+  Rendered suppliers/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/suppliers/new" for 127.0.0.1 at 2017-06-20 14:17:04 +0300
+Processing by SuppliersController#new as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered suppliers/_form.html.erb (13.9ms)
+  Rendered suppliers/new.html.erb within layouts/application (14.7ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `city_id' for #<Supplier:0x007f612a7cdef8>
+Did you mean?  city):
+    33:   </div>
+    34:   <div class="field">
+    35:     <%= f.label :city %><br>
+    36:     <%= f.select :city_id, options_for_select(City.all.collect { |city| [city.name, city.id] })%>
+    37:   </div>
+    38:   <div class="actions">
+    39:     <%= f.submit %>
+  app/views/suppliers/_form.html.erb:36:in `block in _app_views_suppliers__form_html_erb___451555631526884432_70027658143200'
+  app/views/suppliers/_form.html.erb:1:in `_app_views_suppliers__form_html_erb___451555631526884432_70027658143200'
+  app/views/suppliers/new.html.erb:3:in `_app_views_suppliers_new_html_erb___3078427096768627526_70027502386160'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (41.9ms)
+
+
+Started GET "/suppliers/new" for 127.0.0.1 at 2017-06-20 14:17:05 +0300
+Processing by SuppliersController#new as HTML
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered suppliers/_form.html.erb (20.3ms)
+  Rendered suppliers/new.html.erb within layouts/application (21.6ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `city_id' for #<Supplier:0x007f612be5e618>
+Did you mean?  city):
+    33:   </div>
+    34:   <div class="field">
+    35:     <%= f.label :city %><br>
+    36:     <%= f.select :city_id, options_for_select(City.all.collect { |city| [city.name, city.id] })%>
+    37:   </div>
+    38:   <div class="actions">
+    39:     <%= f.submit %>
+  app/views/suppliers/_form.html.erb:36:in `block in _app_views_suppliers__form_html_erb___451555631526884432_70027663150640'
+  app/views/suppliers/_form.html.erb:1:in `_app_views_suppliers__form_html_erb___451555631526884432_70027663150640'
+  app/views/suppliers/new.html.erb:3:in `_app_views_suppliers_new_html_erb___3078427096768627526_70027662517840'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (43.8ms)
+
+
+Started GET "/suppliers/new" for 127.0.0.1 at 2017-06-20 14:17:33 +0300
+Processing by SuppliersController#new as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered suppliers/_form.html.erb (14.1ms)
+  Rendered suppliers/new.html.erb within layouts/application (14.9ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `city_id' for #<Supplier:0x007f612959bf78>
+Did you mean?  city):
+    33:   </div>
+    34:   <div class="field">
+    35:     <%= f.label :city %><br>
+    36:     <%= f.select :city_id, options_for_select(City.all.collect { |city| [city.name, city.id] })%>
+    37:   </div>
+    38:   <div class="actions">
+    39:     <%= f.submit %>
+  app/views/suppliers/_form.html.erb:36:in `block in _app_views_suppliers__form_html_erb___451555631526884432_70027663150640'
+  app/views/suppliers/_form.html.erb:1:in `_app_views_suppliers__form_html_erb___451555631526884432_70027663150640'
+  app/views/suppliers/new.html.erb:3:in `_app_views_suppliers_new_html_erb___3078427096768627526_70027662517840'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.2ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (45.2ms)
+
+
+Started GET "/suppliers/new" for 127.0.0.1 at 2017-06-20 14:17:52 +0300
+Processing by SuppliersController#new as HTML
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered suppliers/_form.html.erb (6.3ms)
+  Rendered suppliers/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/suppliers" for 127.0.0.1 at 2017-06-20 14:18:03 +0300
+Processing by SuppliersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iCVqMQYp3pBxkCu+E1cqbX3DuGH2jJyn+L5RgK97P5pZdDMExLmRdF8TJ11h6ETESTQhmqAg7M3X3vtpKh1pPQ==", "supplier"=>{"first_name"=>"Paul", "last_name"=>"Leoniuk", "product_name"=>"Iphone", "phone"=>"0664537958", "compony"=>"Syndicode", "city"=>"2"}, "commit"=>"Create Supplier"}
+Unpermitted parameter: city
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSupplier Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "suppliers" WHERE "suppliers"."phone" = '0664537958' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.8ms)
+
+NoMethodError (undefined method `city_id' for #<Supplier:0x007f612bac1050>
+Did you mean?  city):
+  app/controllers/suppliers_controller.rb:30:in `block in create'
+  app/controllers/suppliers_controller.rb:29:in `create'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (21.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (44.6ms)
+
+
+Started POST "/suppliers" for 127.0.0.1 at 2017-06-20 14:18:34 +0300
+Processing by SuppliersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iCVqMQYp3pBxkCu+E1cqbX3DuGH2jJyn+L5RgK97P5pZdDMExLmRdF8TJ11h6ETESTQhmqAg7M3X3vtpKh1pPQ==", "supplier"=>{"first_name"=>"Paul", "last_name"=>"Leoniuk", "product_name"=>"Iphone", "phone"=>"0664537958", "compony"=>"Syndicode", "city"=>"2"}, "commit"=>"Create Supplier"}
+Unpermitted parameter: city
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSupplier Exists (0.2ms)[0m  SELECT  1 AS one FROM "suppliers" WHERE "suppliers"."phone" = '0664537958' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.2ms)
+
+NoMethodError (undefined method `city_id' for #<Supplier:0x007f612af92198>
+Did you mean?  city):
+  app/controllers/suppliers_controller.rb:30:in `block in create'
+  app/controllers/suppliers_controller.rb:29:in `create'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (46.0ms)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2017-06-20 14:18:37 +0300
+Processing by SuppliersController#index as HTML
+  [1m[35mSupplier Load (0.2ms)[0m  SELECT "suppliers".* FROM "suppliers"
+  Rendered suppliers/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/suppliers/new" for 127.0.0.1 at 2017-06-20 14:18:39 +0300
+Processing by SuppliersController#new as HTML
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered suppliers/_form.html.erb (22.6ms)
+  Rendered suppliers/new.html.erb within layouts/application (24.3ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `city_id' for #<Supplier:0x007f612aa2f7c8>
+Did you mean?  city):
+    33:   </div>
+    34:   <div class="field">
+    35:     <%= f.label :city %><br>
+    36:     <%= f.select :city_id, options_for_select(City.all.collect { |city| [city.name, city.id] })%>
+    37:   </div>
+    38:   <div class="actions">
+    39:     <%= f.submit %>
+  app/views/suppliers/_form.html.erb:36:in `block in _app_views_suppliers__form_html_erb___451555631526884432_70027651748580'
+  app/views/suppliers/_form.html.erb:1:in `_app_views_suppliers__form_html_erb___451555631526884432_70027651748580'
+  app/views/suppliers/new.html.erb:3:in `_app_views_suppliers_new_html_erb___3078427096768627526_70027502386160'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (4.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (24.2ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (43.8ms)
+
+
+Started GET "/suppliers/new" for 127.0.0.1 at 2017-06-20 14:18:39 +0300
+Processing by SuppliersController#new as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered suppliers/_form.html.erb (15.0ms)
+  Rendered suppliers/new.html.erb within layouts/application (15.8ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `city_id' for #<Supplier:0x007f612bcbf460>
+Did you mean?  city):
+    33:   </div>
+    34:   <div class="field">
+    35:     <%= f.label :city %><br>
+    36:     <%= f.select :city_id, options_for_select(City.all.collect { |city| [city.name, city.id] })%>
+    37:   </div>
+    38:   <div class="actions">
+    39:     <%= f.submit %>
+  app/views/suppliers/_form.html.erb:36:in `block in _app_views_suppliers__form_html_erb___451555631526884432_70027661562500'
+  app/views/suppliers/_form.html.erb:1:in `_app_views_suppliers__form_html_erb___451555631526884432_70027661562500'
+  app/views/suppliers/new.html.erb:3:in `_app_views_suppliers_new_html_erb___3078427096768627526_70027662517840'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (23.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (51.0ms)
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT  "customers".* FROM "customers"  ORDER BY "customers"."id" DESC LIMIT 1[0m
+  [1m[35mSupplier Load (0.3ms)[0m  SELECT  "suppliers".* FROM "suppliers"  ORDER BY "suppliers"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSupplier Exists (0.1ms)[0m  SELECT  1 AS one FROM "suppliers" WHERE "suppliers"."phone" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSupplier Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "suppliers" WHERE "suppliers"."phone" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSupplier Exists (0.1ms)[0m  SELECT  1 AS one FROM "suppliers" WHERE "suppliers"."phone" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSupplier Exists (0.2ms)[0m  SELECT  1 AS one FROM "suppliers" WHERE "suppliers"."phone" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mCity Load (0.1ms)[0m  SELECT  "cities".* FROM "cities"  ORDER BY "cities"."id" DESC LIMIT 1
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities"  ORDER BY "cities"."id" DESC LIMIT 1[0m
+  [1m[36m (4.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateSuppliers (20170620093818)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "suppliers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "product_name" varchar, "phone" varchar, "compony" varchar, "city_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_suppliers_on_city_id" ON "suppliers" ("city_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170620093818"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateCustomers (20170620093842)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "customers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "phone" varchar, "city_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_customers_on_city_id" ON "customers" ("city_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170620093842"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to CreateOrders (20170620094128)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "supplier_id" integer, "customer_id" integer, "city_id" integer, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_orders_on_supplier_id" ON "orders" ("supplier_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_supplier_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_supplier_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_orders_on_customer_id" ON "orders" ("customer_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_customer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_customer_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_supplier_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_supplier_id' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m  CREATE  INDEX "index_orders_on_city_id" ON "orders" ("city_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170620094128"]]
+  [1m[35m (3.7ms)[0m  commit transaction
+Migrating to CreateCities (20170620094146)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "cities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170620094146"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_customers_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_customers_on_city_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_city_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_customer_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_customer_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_supplier_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_supplier_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_suppliers_on_city_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_suppliers_on_city_id' AND type='index'
+
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities"  ORDER BY "cities"."id" DESC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSupplier Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "suppliers" WHERE "suppliers"."phone" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+
+
+Started GET "/suppliers/new" for 127.0.0.1 at 2017-06-20 14:21:48 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SuppliersController#new as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered suppliers/_form.html.erb (482.9ms)
+  Rendered suppliers/new.html.erb within layouts/application (487.6ms)
+Completed 200 OK in 800ms (Views: 767.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2017-06-20 14:22:02 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 301ms (Views: 284.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2017-06-20 14:22:04 +0300
+Processing by CitiesController#index as HTML
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered cities/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2017-06-20 14:22:05 +0300
+Processing by CitiesController#new as HTML
+  Rendered cities/_form.html.erb (513.5ms)
+  Rendered cities/new.html.erb within layouts/application (519.2ms)
+Completed 200 OK in 564ms (Views: 548.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2017-06-20 14:22:08 +0300
+Processing by CitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7YTwkHYKW1uAu+O2NUwQPQASM4Xhl2LO5Gbodf7DiFo81amltJoUv64471VH836UNOWqfrc7EqTLBkKce6Xe/Q==", "city"=>{"name"=>"1"}, "commit"=>"Create City"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cities" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "1"], ["created_at", "2017-06-20 11:22:08.365327"], ["updated_at", "2017-06-20 11:22:08.365327"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/cities/1
+Completed 302 Found in 8ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/cities/1" for 127.0.0.1 at 2017-06-20 14:22:08 +0300
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cities/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 49ms (Views: 28.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2017-06-20 14:22:09 +0300
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cities/new" for 127.0.0.1 at 2017-06-20 14:22:10 +0300
+Processing by CitiesController#new as HTML
+  Rendered cities/_form.html.erb (1.3ms)
+  Rendered cities/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cities" for 127.0.0.1 at 2017-06-20 14:22:14 +0300
+Processing by CitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c85d5LE5uVlaJVahafwJlSYvwijsC0l5k0QEL2n6ltqinwTRc6n2vXSmWkIbQ2c8Ethb07qnORO8JK7G7JzAfQ==", "city"=>{"name"=>"Kyiv"}, "commit"=>"Create City"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "cities" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Kyiv"], ["created_at", "2017-06-20 11:22:14.599401"], ["updated_at", "2017-06-20 11:22:14.599401"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/cities/2
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/cities/2" for 127.0.0.1 at 2017-06-20 14:22:14 +0300
+Processing by CitiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCity Load (0.1ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered cities/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/suppliers/new" for 127.0.0.1 at 2017-06-20 14:22:17 +0300
+Processing by SuppliersController#new as HTML
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered suppliers/_form.html.erb (6.9ms)
+  Rendered suppliers/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 57ms (Views: 35.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/suppliers" for 127.0.0.1 at 2017-06-20 14:22:24 +0300
+Processing by SuppliersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lUoTHDO7bylpYMgOWFQH+bYS0OH+BoleFt72P0ekHrFEG0op8SsgzUfjxO0q62lQguVJGqiq+TQ5vlzWwsJIFg==", "supplier"=>{"first_name"=>"Paul", "last_name"=>"Leoniuk", "product_name"=>"Iphone", "phone"=>"0664537958", "compony"=>"Syndicode", "city_id"=>"2"}, "commit"=>"Create Supplier"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSupplier Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "suppliers" WHERE "suppliers"."phone" = '0664537958' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "suppliers" ("first_name", "last_name", "product_name", "phone", "compony", "city_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["first_name", "Paul"], ["last_name", "Leoniuk"], ["product_name", "Iphone"], ["phone", "0664537958"], ["compony", "Syndicode"], ["city_id", 2], ["created_at", "2017-06-20 11:22:24.612060"], ["updated_at", "2017-06-20 11:22:24.612060"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/suppliers/1
+Completed 302 Found in 23ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/suppliers/1" for 127.0.0.1 at 2017-06-20 14:22:24 +0300
+Processing by SuppliersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSupplier Load (0.2ms)[0m  SELECT  "suppliers".* FROM "suppliers" WHERE "suppliers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered suppliers/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2017-06-20 14:22:26 +0300
+Processing by SuppliersController#index as HTML
+  [1m[36mSupplier Load (0.2ms)[0m  [1mSELECT "suppliers".* FROM "suppliers"[0m
+  [1m[35mCity Load (0.1ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered suppliers/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 14:22:29 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT "customers".* FROM "customers"[0m
+  Rendered customers/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 32ms (Views: 27.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-20 14:22:30 +0300
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 31ms (Views: 26.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 14:22:30 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT "customers".* FROM "customers"[0m
+  Rendered customers/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/customers/new" for 127.0.0.1 at 2017-06-20 14:22:31 +0300
+Processing by CustomersController#new as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered customers/_form.html.erb (5.7ms)
+  Rendered customers/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 36ms (Views: 31.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/customers" for 127.0.0.1 at 2017-06-20 14:22:40 +0300
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k2ku3giMsBGIktwKdeQrQ/ze10aSn8qho19vEv8BX3xCOHfryhz/9aYR0OkHW0XqyClOvcQzusuMP8X7emcJ2w==", "customer"=>{"first_name"=>"Paul", "last_name"=>"Leoniuk", "phone"=>"0664537957", "city_id"=>"2"}, "commit"=>"Create Customer"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCustomer Exists (0.2ms)[0m  SELECT  1 AS one FROM "customers" WHERE "customers"."phone" = '0664537957' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "customers" ("first_name", "last_name", "phone", "city_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Paul"], ["last_name", "Leoniuk"], ["phone", "0664537957"], ["city_id", 2], ["created_at", "2017-06-20 11:22:40.560828"], ["updated_at", "2017-06-20 11:22:40.560828"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/customers/1
+Completed 302 Found in 12ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/customers/1" for 127.0.0.1 at 2017-06-20 14:22:40 +0300
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered customers/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-20 14:22:41 +0300
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2017-06-20 14:22:43 +0300
+Processing by OrdersController#new as HTML
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cities".* FROM "cities"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  Rendered orders/_form.html.erb (13.0ms)
+  Rendered orders/new.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 50ms (Views: 45.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2017-06-20 14:23:05 +0300
+Processing by OrdersController#new as HTML
+  [1m[35mCity Load (0.3ms)[0m  SELECT "cities".* FROM "cities"
+  [1m[36mSupplier Load (0.3ms)[0m  [1mSELECT "suppliers".* FROM "suppliers"[0m
+  Rendered orders/_form.html.erb (17.0ms)
+  Rendered orders/new.html.erb within layouts/application (18.2ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `name' for #<Supplier:0x007fc2b8406e10>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :supplier %><br>
+    24:     <%= f.select :supplier_id, options_for_select(Supplier.all.collect { |city| [city.name, city.id] })%>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :customer %><br>
+  app/views/orders/_form.html.erb:24:in `block (2 levels) in _app_views_orders__form_html_erb__1564444436272398041_70237145594000'
+  app/views/orders/_form.html.erb:24:in `block in _app_views_orders__form_html_erb__1564444436272398041_70237145594000'
+  app/views/orders/_form.html.erb:1:in `_app_views_orders__form_html_erb__1564444436272398041_70237145594000'
+  app/views/orders/new.html.erb:3:in `_app_views_orders_new_html_erb___2131545169579497308_70237145555020'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.2ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (39.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.8ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (43.6ms)
+
+
+Started POST "/orders/console/repl_sessions/7208172bac25dacc5aa7827e4c8d135e/trace" for 127.0.0.1 at 2017-06-20 14:23:19 +0300
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2017-06-20 14:23:20 +0300
+Processing by OrdersController#new as HTML
+  [1m[35mCity Load (0.3ms)[0m  SELECT "cities".* FROM "cities"
+  [1m[36mSupplier Load (0.2ms)[0m  [1mSELECT "suppliers".* FROM "suppliers"[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT "customers".* FROM "customers"
+  Rendered orders/_form.html.erb (10.6ms)
+  Rendered orders/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/orders" for 127.0.0.1 at 2017-06-20 14:23:26 +0300
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cnNX32MnObwBLD9EOtibqmhI/AqSg5nwK/80fLxHAa+jIg7qobd2WC+vM6dIZ/UDXL9l8cQv6ZoEn56VOSFXCA==", "order"=>{"date(1i)"=>"2017", "date(2i)"=>"6", "date(3i)"=>"20", "date(4i)"=>"11", "date(5i)"=>"23", "city"=>"2", "supplier_id"=>"1", "customer_id"=>"1"}, "commit"=>"Create Order"}
+Unpermitted parameter: city
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `time_of_purchase' for #<Order:0x007fc2b82ef2c0>):
+  app/controllers/orders_controller.rb:30:in `block in create'
+  app/controllers/orders_controller.rb:29:in `create'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (28.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (59.2ms)
+
+
+Started POST "/orders" for 127.0.0.1 at 2017-06-20 14:23:47 +0300
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cnNX32MnObwBLD9EOtibqmhI/AqSg5nwK/80fLxHAa+jIg7qobd2WC+vM6dIZ/UDXL9l8cQv6ZoEn56VOSFXCA==", "order"=>{"date(1i)"=>"2017", "date(2i)"=>"6", "date(3i)"=>"20", "date(4i)"=>"11", "date(5i)"=>"23", "city"=>"2", "supplier_id"=>"1", "customer_id"=>"1"}, "commit"=>"Create Order"}
+Unpermitted parameter: city
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  [1m[35mSupplier Load (0.2ms)[0m  SELECT "suppliers".* FROM "suppliers"
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT "customers".* FROM "customers"[0m
+  Rendered orders/_form.html.erb (54.2ms)
+  Rendered orders/new.html.erb within layouts/application (55.5ms)
+Completed 200 OK in 104ms (Views: 84.2ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/orders" for 127.0.0.1 at 2017-06-20 14:23:53 +0300
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eQKKmwhiAXJongca18TU6B9b8jBJkdLB0dbwPv73jvCoU9OuyvJOlkYdC/mle7pBK6xryx89oqv+tlrXe5HYVw==", "order"=>{"date(1i)"=>"2017", "date(2i)"=>"6", "date(3i)"=>"20", "date(4i)"=>"11", "date(5i)"=>"23", "city"=>"2", "supplier_id"=>"1", "customer_id"=>"1"}, "commit"=>"Create Order"}
+Unpermitted parameter: city
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  [1m[36mSupplier Load (0.2ms)[0m  [1mSELECT "suppliers".* FROM "suppliers"[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT "customers".* FROM "customers"
+  Rendered orders/_form.html.erb (11.8ms)
+  Rendered orders/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 58ms (Views: 50.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/orders" for 127.0.0.1 at 2017-06-20 14:24:19 +0300
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eQKKmwhiAXJongca18TU6B9b8jBJkdLB0dbwPv73jvCoU9OuyvJOlkYdC/mle7pBK6xryx89oqv+tlrXe5HYVw==", "order"=>{"date(1i)"=>"2017", "date(2i)"=>"6", "date(3i)"=>"20", "date(4i)"=>"11", "date(5i)"=>"23", "city"=>"2", "supplier_id"=>"1", "customer_id"=>"1"}, "commit"=>"Create Order"}
+Unpermitted parameter: city
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities"[0m
+  [1m[35mSupplier Load (0.2ms)[0m  SELECT "suppliers".* FROM "suppliers"
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT "customers".* FROM "customers"[0m
+  Rendered orders/_form.html.erb (38.7ms)
+  Rendered orders/new.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 88ms (Views: 67.4ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/orders" for 127.0.0.1 at 2017-06-20 14:24:21 +0300
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UdOD5mgIopJyc4qjbxaCjgZRl+/KJjfnegI3GD48iX+AgtrTqpjtdlzwhkAdqewnMqYOFJyKR41VYp3xu1rf2A==", "order"=>{"date(1i)"=>"2017", "date(2i)"=>"6", "date(3i)"=>"20", "date(4i)"=>"11", "date(5i)"=>"23", "city_id"=>"2", "supplier_id"=>"1", "customer_id"=>"1"}, "commit"=>"Create Order"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "orders" ("supplier_id", "customer_id", "city_id", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["supplier_id", 1], ["customer_id", 1], ["city_id", 2], ["date", "2017-06-20 11:23:00.000000"], ["created_at", "2017-06-20 11:24:21.518270"], ["updated_at", "2017-06-20 11:24:21.518270"]]
+  [1m[35m (7.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/orders/1
+Completed 302 Found in 14ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/orders/1" for 127.0.0.1 at 2017-06-20 14:24:21 +0300
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered orders/show.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `date_of_purchase' for #<Order:0x007fc2ce3b0b80>
+Did you mean?  date_change):
+    2: 
+    3: <p>
+    4:   <strong>Date of purchase:</strong>
+    5:   <%= @order.date_of_purchase %>
+    6: </p>
+    7: 
+    8: <p>
+  app/views/orders/show.html.erb:5:in `_app_views_orders_show_html_erb__2940754967281095669_70237332494440'
+
+
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.2ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.4ms)
+
+
+Started GET "/orders/1" for 127.0.0.1 at 2017-06-20 14:24:42 +0300
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered orders/show.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-20 14:24:44 +0300
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  [1m[36mCity Load (0.1ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered orders/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders/1" for 127.0.0.1 at 2017-06-20 14:24:46 +0300
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCity Load (0.1ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered orders/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-20 14:25:58 +0300
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  [1m[36mCity Load (0.1ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered orders/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2017-06-20 14:25:59 +0300
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-20 14:26:00 +0300
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  [1m[35mCity Load (0.1ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered orders/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2017-06-20 14:26:00 +0300
+Processing by SuppliersController#index as HTML
+  [1m[36mSupplier Load (0.2ms)[0m  [1mSELECT "suppliers".* FROM "suppliers"[0m
+  [1m[35mCity Load (0.1ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered suppliers/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 14:26:01 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT "customers".* FROM "customers"[0m
+  [1m[35mCity Load (0.1ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered customers/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 14:26:02 +0300
+Processing by CustomersController#index as HTML
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT "customers".* FROM "customers"[0m
+  [1m[35mCity Load (0.1ms)[0m  SELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered customers/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-20 15:43:56 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CustomersController#index as HTML
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT "customers".* FROM "customers"
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered customers/index.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 10354ms (Views: 10329.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2017-06-20 15:44:10 +0300
+Processing by CustomersController#index as HTML
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT "customers".* FROM "customers"
+  [1m[36mCity Load (0.1ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered customers/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/suppliers" for 127.0.0.1 at 2017-06-20 15:44:11 +0300
+Processing by SuppliersController#index as HTML
+  [1m[35mSupplier Load (0.2ms)[0m  SELECT "suppliers".* FROM "suppliers"
+  [1m[36mCity Load (0.1ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered suppliers/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 60ms (Views: 55.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-06-20 15:44:12 +0300
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  [1m[36mCity Load (0.1ms)[0m  [1mSELECT  "cities".* FROM "cities" WHERE "cities"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered orders/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 45ms (Views: 39.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cities" for 127.0.0.1 at 2017-06-20 15:44:13 +0300
+Processing by CitiesController#index as HTML
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities"
+  Rendered cities/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-06-20 15:44:14 +0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "cities"[0m
+  [1m[35mCity Load (0.2ms)[0m  SELECT  "cities".* FROM "cities"  ORDER BY "cities"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "customers"[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT  "customers".* FROM "customers"  ORDER BY "customers"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders"[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders"  ORDER BY "orders"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "suppliers"[0m
+  [1m[35mSupplier Load (0.3ms)[0m  SELECT  "suppliers".* FROM "suppliers"  ORDER BY "suppliers"."id" DESC LIMIT 1
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (37.2ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (14.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (8.4ms)
+Completed 200 OK in 1247ms (Views: 545.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-06-20 15:44:15 +0300
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "cities"[0m
+  [1m[35mCity Load (0.2ms)[0m  SELECT  "cities".* FROM "cities"  ORDER BY "cities"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "customers"[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT  "customers".* FROM "customers"  ORDER BY "customers"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "orders"[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders"  ORDER BY "orders"."id" DESC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "suppliers"[0m
+  [1m[35mSupplier Load (0.2ms)[0m  SELECT  "suppliers".* FROM "suppliers"  ORDER BY "suppliers"."id" DESC LIMIT 1
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (24.7ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.4ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (12.6ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.9ms)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (7.9ms)
+Completed 200 OK in 222ms (Views: 209.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.self-30325ff7fb00e5c80f08e460683e60dce7950b32a55665ba8a7a57e819907211.css?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/jquery-ui/core.self-93be4d22eda916787802a64d8f88b52db8a9027d4ccbbc0942625324a7d12d44.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/jquery.iframe-transport.self-b58640d2146e10a028d4aec4f1c6e624305f8b5edd02cbb5ca77f7fb56b4d976.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/jquery-ui/effect.self-3acdb29e7da09c8f0195b994d2f04d73bfef50dc539c84fd2c835d964d33e5c1.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/jquery.remotipart.self-1660679e325ee534ce863e680eb6ad0bc9739d262594dc1337a2171e5c19c939.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/jquery-ui/widget.self-c1602241ddc51216b58391768667068867b8e15b9efc722befcd25771eda6819.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/jquery-ui/mouse.self-c513294e8da73f31f84ba3ef11e2a1180a47faea0eb2fea4a53fc26153dd21fd.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/jquery-ui/sortable.self-df2d80a36f9dfbe0facc596ccd92af83ca50d38e4cd6a84810aaf5d40b8cd181.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/jquery-ui/position.self-e693ced4ecfa1a276f0b794f32c1d30d792764b08788bf68ecfa3b388c291333.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/jquery-ui/menu.self-7abc1c9401509a7e4fc609b1e461be6fd17e8116e8fda19cc59d05ba79aefb68.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/jquery-ui/autocomplete.self-3befc48aba87cead090cfd014562b2771a662ac6d2c8197b24c08b2d9f3d9f2d.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/moment-with-locales.self-c29e385ac561ac8d380cf9a68428251c3dd6b6f0f05f6114c6ae7e8114678db8.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap-datetimepicker.self-9bf8b50ba86095fb5caaadd1ee11eaf661b3f4879f3ea5263d541e9804fd7b15.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.self-65a540a6a8e61569a39a37bd1456543ae5e5bbe48868247372bed40a1dff2bcf.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/ra.filter-box.self-195103c2264434612da85f150286ad7ea0d279828a186070ba5db6506cd7b5e6.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.self-bed24122f49a15537a73b85a4ada928d417938a0711400d96bb55e5edf6b40c6.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.self-15919813558b13803655e2a70a79311fefe9f4620debf84f36b7d3af3ba0b813.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/ra.remote-form.self-6ee31242b35c47eae247621696152697683860be737fcb9fc7705305736c9370.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/jquery.pjax.self-aa02343d5b755c77fd76db8b2d2864cf2aebdba056b56e74b3b91f2e65207444.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/jquery_nested_form.self-d38045d10ebdd28aac44152cb451796232091957b86b47bedad1ab171a3a12cd.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.self-53f400a47e3ece2d820f34e4a9834b229c191801c55619003453eb45c864db04.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/ra.i18n.self-725ab24c454e18d4832f68df96ec4fffa6190faed5636160923a6d1162a1a0ba.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.self-2621ced336904d375bef144d46edd9d304889e09c6559d64df325bbd10f4ce8a.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/ra.widgets.self-b707ff6592e3d3359ef77e61d1161a0370c5663c303eb0a5cec459fbf1fa7229.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/ui.self-5f1671365225e7918e5bf4cb99fc38b189e81884fb859682f79a683f41ee19b7.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/custom/ui.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/rails_admin/rails_admin.self-ab9f3e5c71b96d0ca434851ecacc97b0fc3a0e8d96ab171916e9d5fdd10ef15b.js?body=1" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/assets/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2" for 127.0.0.1 at 2017-06-20 15:44:16 +0300
+
+
+Started GET "/admin/order?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-06-20 15:44:18 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"order"}
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT  "orders".* FROM "orders"  ORDER BY orders.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mSupplier Load (0.2ms)[0m  SELECT "suppliers".* FROM "suppliers" WHERE "suppliers"."id" IN (1)
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT "customers".* FROM "customers" WHERE "customers"."id" IN (1)[0m
+  [1m[35mCity Load (0.2ms)[0m  SELECT "cities".* FROM "cities" WHERE "cities"."id" IN (2)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (97.4ms)
+Completed 200 OK in 118ms (Views: 107.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/customer?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-06-20 15:44:21 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"customer"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT  "customers".* FROM "customers"  ORDER BY customers.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mCity Load (0.3ms)[0m  SELECT "cities".* FROM "cities" WHERE "cities"."id" IN (2)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (40.3ms)
+Completed 200 OK in 61ms (Views: 51.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/customer?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-06-20 15:44:23 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"customer"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1mSELECT  "customers".* FROM "customers"  ORDER BY customers.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mCity Load (0.4ms)[0m  SELECT "cities".* FROM "cities" WHERE "cities"."id" IN (2)
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (28.0ms)
+Completed 200 OK in 47ms (Views: 37.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/city?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-06-20 15:44:23 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"city"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  "cities".* FROM "cities"  ORDER BY cities.id desc LIMIT 20 OFFSET 0[0m
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (30.1ms)
+Completed 200 OK in 51ms (Views: 39.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/order?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-06-20 15:44:24 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"order"}
+  [1m[35mOrder Load (0.4ms)[0m  SELECT  "orders".* FROM "orders"  ORDER BY orders.id desc LIMIT 20 OFFSET 0
+  [1m[36mSupplier Load (0.3ms)[0m  [1mSELECT "suppliers".* FROM "suppliers" WHERE "suppliers"."id" IN (1)[0m
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT "customers".* FROM "customers" WHERE "customers"."id" IN (1)
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities" WHERE "cities"."id" IN (2)[0m
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (36.4ms)
+Completed 200 OK in 53ms (Views: 44.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/supplier?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-06-20 15:44:24 +0300
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"supplier"}
+  [1m[35mSupplier Load (0.3ms)[0m  SELECT  "suppliers".* FROM "suppliers"  ORDER BY suppliers.id desc LIMIT 20 OFFSET 0
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT "cities".* FROM "cities" WHERE "cities"."id" IN (2)[0m
+  Rendered /home/paulleoniuk/.rvm/gems/ruby-2.3.1@suppliers/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (32.0ms)
+Completed 200 OK in 51ms (Views: 40.2ms | ActiveRecord: 0.6ms)

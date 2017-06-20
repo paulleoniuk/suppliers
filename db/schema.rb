@@ -11,11 +11,49 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170618153841) do
+ActiveRecord::Schema.define(version: 20170620094146) do
 
   create_table "cities", force: :cascade do |t|
+    t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "customers", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "phone"
+    t.integer  "city_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "customers", ["city_id"], name: "index_customers_on_city_id"
+
+  create_table "orders", force: :cascade do |t|
+    t.integer  "supplier_id"
+    t.integer  "customer_id"
+    t.integer  "city_id"
+    t.datetime "date"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "orders", ["city_id"], name: "index_orders_on_city_id"
+  add_index "orders", ["customer_id"], name: "index_orders_on_customer_id"
+  add_index "orders", ["supplier_id"], name: "index_orders_on_supplier_id"
+
+  create_table "suppliers", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "product_name"
+    t.string   "phone"
+    t.string   "compony"
+    t.integer  "city_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "suppliers", ["city_id"], name: "index_suppliers_on_city_id"
 
 end
